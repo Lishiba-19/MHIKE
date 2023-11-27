@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="M-HIKE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@color/Shade_green"
+
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:padding="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/newObservationId"
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/Shade_green"
+                android:src="@drawable/baseline_remove_red_eye_24"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Observation +"
+                android:textAlignment="center"
+                android:textColor="@color/Shade_green"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageButton
+                android:id="@+id/back_Observations"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/Shade_green"
+                android:src="@drawable/baseline_hiking_24"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Menu"
+                android:textSize="20sp"
+                android:textColor="@color/Shade_green"
+                android:layout_marginStart="13dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/deleteAllObservations"
+                android:layout_width="75dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/Shade_green"
+                android:src="@drawable/baseline_delete_forever_24"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete All"
+                android:textSize="20sp"
+                android:textColor="@color/Shade_green"
+                android:layout_marginStart="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/searchHere2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:hint="Search observations"
+        app:iconifiedByDefault="false">
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/observationRecyclerVId"
+        android:layout_width="match_parent"
+        android:layout_height="509dp"
+        android:layout_marginTop="3dp"
+        android:divider="@color/lightgrey"
+        android:dividerHeight="3dp"
+        android:paddingTop="?attr/actionBarSize">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+</LinearLayout>

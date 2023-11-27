@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="hikeDescId" type="id" />
+    <item name="hikeDifficultyId" type="id" />
+    <item name="hikeLengthId" type="id" />
+    <item name="noRadioId" type="id" />
+    <item name="yesRadioId" type="id" />
+    <item name="parkingR_GroupId" type="id" />
+    <item name="hikeDateId" type="id" />
+    <item name="locationNameId" type="id" />
+    <item name="hikeNameId" type="id" />
+    <item name="hikeDistanceId" type="id" />
+    <item name="saveHikebtnId" type="id" />
+    <item name="hikeWeatherId" type="id" />
+</resources>
